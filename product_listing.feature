@@ -10,3 +10,8 @@ Scenario: searching for xbox
      When we search for "xbox"
      Then we find items from "xbox series s"
 	 Then we find items from "xbox series x"
+	 
+ Examples: Various products
+   | product     | vendor |
+   | electronics | TV     |
+   | Shirt       |  top   |
