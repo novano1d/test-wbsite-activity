@@ -11,7 +11,13 @@ Scenario: searching for xbox
      Then we find items from "xbox series s"
 	 Then we find items from "xbox series x"
 	 
- Examples: Various products
+
+Scenario Outline: concatenate various things
+    Given that we have gone to www.hsn.com
+     When we search for "<product>"
+     Then we find items from "<vendor>"
+	
+Examples: Various products
    | product     | vendor |
    | electronics | TV     |
    | Shirt       |  top   |
